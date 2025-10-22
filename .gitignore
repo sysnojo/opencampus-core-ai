@@ -1,0 +1,69 @@
+# --- Python general ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# --- Virtual environments ---
+venv/
+env/
+ENV/
+.venv/
+.pyenv/
+pip-wheel-metadata/
+pip-log.txt
+
+# --- IDE & editor stuff ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs & temp files ---
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+
+# --- Build & dist directories ---
+build/
+dist/
+eggs/
+parts/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# --- Jupyter / notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Testing / coverage ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+.cache/
+.pytest_cache/
+
+# --- Django / Flask specific ---
+*.sqlite3
+instance/
+*.db
+*.db-journal
+
+# --- Environment variables ---
+.env
+.env.*
+*.env
