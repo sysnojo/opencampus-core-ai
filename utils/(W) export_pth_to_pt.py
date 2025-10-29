@@ -4,9 +4,9 @@ from torchvision import models
 import json
 
 # === PATHS ===
-pth_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\exported\best_model.pth"
-ptl_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_exported\oc-mnet-v0.ptl"
-json_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_exported\class_names.json"
+pth_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_models\oc-mnet-v2.pth"
+ptl_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_exported\v2\prototype_oc-mnet-v2.ptl"
+json_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_models\class_oc-mnet-v2.json"
 
 # === LOAD CLASS NAMES ===
 with open(json_path, "r") as f:
