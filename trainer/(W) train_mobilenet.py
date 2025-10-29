@@ -6,13 +6,13 @@ from torch.utils.data import DataLoader, random_split
 import os, json
 
 # ==== CONFIGURATION ====
-DATA_DIR = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\dataset"
-EXPORT_DIR = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\exported"
-SAVE_PATH = os.path.join(EXPORT_DIR, "best_model.pth")
-CLASS_JSON = os.path.join(EXPORT_DIR, "class_names.json")
+DATA_DIR = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\dataset_new"
+EXPORT_DIR = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_models"
+SAVE_PATH = os.path.join(EXPORT_DIR, "oc-mnet-v2.pth")
+CLASS_JSON = os.path.join(EXPORT_DIR, "class_oc-mnet-v2.json")
 
 BATCH_SIZE = 4
-EPOCHS = 25
+EPOCHS = 30
 LR = 5e-4
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
