@@ -8,8 +8,8 @@ import json
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # === 2. PATH MODEL DAN KELAS ===
-model_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_exported\oc-mnet-v1-new.ptl"
-with open(r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_exported\class_names.json", "r") as f:
+model_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_exported\v2\prototype_oc-mnet-v2.ptl"
+with open(r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\trained_models\class_oc-mnet-v2.json", "r") as f:
     class_names = json.load(f)
 num_classes = len(class_names)
 
@@ -28,8 +28,8 @@ transform = transforms.Compose([
 ])
 
 # === 5. BACA VIDEO ===
-video_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\raw\ruang_dosen_1.mp4"
-log_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\logs\video_predictions_ptl.txt"
+video_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\raw\new\Half.mp4"
+log_path = r"C:\Users\Alpabit\Documents\[!] TUGAS AKHIR\Project\OpenCampus\logs\vpre_001.txt"
 
 cap = cv2.VideoCapture(video_path)
 fps = cap.get(cv2.CAP_PROP_FPS)
